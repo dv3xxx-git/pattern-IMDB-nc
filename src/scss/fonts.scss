@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 @font-face {
     font-family: 'Proxima Nova Bl';
     src: url('/src/fonts/ProximaNova-Black.eot');
@@ -169,4 +171,8 @@
 .typo-menu{
     font-family: 'Proxima Nova Rg';
     line-height: 19.49px;
+}
+
+.typo-menu .typo-menu__profile{
+    font-family: 'Roboto', sans-serif;
 }

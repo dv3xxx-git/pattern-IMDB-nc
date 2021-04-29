@@ -1,9 +1,92 @@
 @import "/src/scss/fonts.scss";
 @import "/src/scss/global.scss";
 
-.wrapper{
+.wrapper {
     background-color: #ffffff;
     margin: 0 auto;
     margin-top: 100px;
     max-width: 1300px;
 }
+
+// ************************************** GRID AREA **************************
+.wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 100px 100px;
+}
+header {
+    white-space: nowrap;
+    display: grid;
+    grid-template-columns: minmax(100px, 318px) minmax(130px, 130px) auto auto auto auto minmax(32px, 400px) minmax(
+            42px,
+            77px
+        );
+}
+// ************************************** END GRID AREA **********************
+// ************************************** HEADER *****************************
+header {
+    height: 80px;
+    .logo {
+        padding-left: 20px;
+        padding-top: 13px;
+        max-width: 347px;
+    }
+    .menu-link {
+        text-align: center;
+    }
+    .menu-link :not(:last-child) {
+        margin-right: 14px;
+    }
+    .menu-link :not(:first-child) {
+        margin-left: 14px;
+    }
+    .menu-link:hover {
+        background-color: #ea4737;
+        color: #ffffff;
+        .menu-link__link {
+            color: #ffffff;
+        }
+    }
+    .menu-link__link {
+        display: block;
+        padding-top: 32px;
+        padding-left: 29px;
+        padding-right: 28px;
+    }
+    .typo-menu__profile img {
+        margin-top: 19px;
+    }
+    .typo-menu__search {
+        text-align: right;
+        padding-top: 24px;
+        padding-right: 26px;
+    }
+
+    .typo-menu__profile {
+        img {
+            margin-top: 19px;
+        }
+        .typo-menu__profile-big-ring {
+            margin-top: 13px;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            margin-left: 28px;
+        }
+        .typo-menu__profile-ring {
+            margin-top: 13px;
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background: #00c853;
+            border-radius: 50%;
+            margin-left: 30px;
+            text-align: center;
+            color: #ffffff;
+        }
+    }
+}
+
+// ************************************** End HEADER *************************
