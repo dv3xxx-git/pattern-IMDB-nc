@@ -12,15 +12,30 @@
 .wrapper {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: 80px 368px 100px;
 }
 header {
     white-space: nowrap;
     display: grid;
-    grid-template-columns: minmax(100px, 318px) minmax(130px, 130px) auto auto auto auto minmax(32px, 400px) minmax(
-            42px,
-            77px
-        );
+    grid-template-columns:
+        minmax(100px, 318px) minmax(130px, 130px) auto auto auto auto minmax(32px, 400px)
+        minmax(42px, 77px);
+}
+.playing-now {
+    display: grid;
+    grid-template-columns: 35px minmax(100px, 1265px);
+    grid-template-rows: 368px;
+}
+
+.playing-now__film {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 260px)) minmax(100px, 242px);
+    grid-template-rows: 368px;
+    grid-column-gap: 4px;
+}
+.playing-now__block__red{
+    grid-template-columns: 100%;
+    grid-template-rows: 122px 124px 122px;
 }
 // ************************************** END GRID AREA **********************
 // ************************************** HEADER *****************************
@@ -90,3 +105,76 @@ header {
 }
 
 // ************************************** End HEADER *************************
+// ************************************** PLAYING NOW AREA *******************
+.playing-now__baner {
+    white-space: nowrap;
+    background-color: #2998e2;
+    .baner-transform-text {
+        margin-top: 264px;
+        -webkit-transform: rotate(-90deg); //Chrome, Safari
+        -moz-transform: rotate(-90deg); //Firefox
+        -o-transform: rotate(-90deg); //Opera
+        -ms-transform: rotate(-90deg); //IE
+        transform: rotate(-90deg); //браузеры без префексов
+    }
+}
+
+.playing-now {
+    .playing-now__main-image {
+        width: 100%;
+        height: 100%;
+        max-width: 252px;
+        max-height: 368px;
+    }
+}
+
+.playing-now__block{
+    position: relative;
+}
+
+.playing-now__block__red{
+    position: absolute;
+    display: none;
+    background-color: #FF2F1B;
+    opacity: 58%;
+    width: 100%;
+    height: 100%;
+}
+
+.playing-now__block__white{
+    position: absolute;
+    display: none;
+    background-color: #FFFFFF;
+    opacity: 30%;
+    width: 100%;
+    height: 100%;
+}
+
+.playing-now__block__red-ticket, .playing-now__block__red-info, .playing-now__block__red-watch{
+    margin: auto auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.playing-now__block__red-link:hover{
+    .playing-now__block__white{
+        display: block;
+    }
+}
+
+.playing-now__block:hover{
+    .playing-now__block__red{
+        display: grid;
+        z-index: 2;
+    }
+}
+
+.playing-now__block__red-link{
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+// ************************************** End PLAYING NOW AREA ***************
