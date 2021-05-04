@@ -12,7 +12,7 @@
 .wrapper {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 80px 368px 409px;
+    grid-template-rows: 80px 368px 409px 441px 441px 160px 286px;
 }
 header {
     white-space: nowrap;
@@ -40,7 +40,7 @@ header {
 
 .top-cinema{
     display: grid;
-    grid-template-rows: 409px;
+    grid-template-rows: 405px;
     grid-template-columns: 34px minmax(100px, 508px) minmax(300px,758px);
 }
 .top-cinema__about{
@@ -57,6 +57,12 @@ header {
 .top-cinema__about__anotaition__block{
     display: grid;
     grid-template-columns: minmax(80px, 110px) minmax(131px, 193px);
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 437px 228px 228px 137px 131px 139px;
+    grid-template-rows: auto auto;
 }
 // ************************************** END GRID AREA **********************
 // ************************************** HEADER *****************************
@@ -265,7 +271,23 @@ header {
 .genres span{
     text-align: center;
     width: 49px;
-    
+
     position: absolute;
 }
+
+.trailer{
+    background-image: url("../img/png/bigbourne.png");
+}
 // ************************************** END TOP CINEMA AREA ****************
+// ************************************** FOOTER AREA ************************
+.download{
+    margin-left: 16px;
+}
+.download-appstore, .download-googleplay, .download-amazon{
+    display: inline-block;
+}
+.download-googleplay{
+    margin-left: 9px;
+    margin-right: 9px;
+}
+// ************************************** END FOOTER AREA ********************
