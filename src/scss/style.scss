@@ -12,7 +12,7 @@
 .wrapper {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 80px 368px 100px;
+    grid-template-rows: 80px 368px 409px;
 }
 header {
     white-space: nowrap;
@@ -36,6 +36,16 @@ header {
 .playing-now__block__red{
     grid-template-columns: 100%;
     grid-template-rows: 122px 124px 122px;
+}
+
+.top-cinema{
+    display: grid;
+    grid-template-rows: 409px;
+    grid-template-columns: 34px minmax(100px, 508px) minmax(300px,758px);
+}
+.top-cinema__about{
+    display: grid;
+    grid-template-rows: minmax(150px, 223px) auto minmax(70px, 80px);
 }
 // ************************************** END GRID AREA **********************
 // ************************************** HEADER *****************************
@@ -178,3 +188,26 @@ header {
     display: block;
 }
 // ************************************** End PLAYING NOW AREA ***************
+// ************************************** TOP CINEMA AREA ********************
+.top-cinema{
+    margin-top: 4px;
+}
+.top-cinema__baner{
+    white-space: nowrap;
+    background-color: #EA4737;
+    .baner-transform-text {
+        margin-top: 270px;
+        -webkit-transform: rotate(-90deg); //Chrome, Safari
+        -moz-transform: rotate(-90deg); //Firefox
+        -o-transform: rotate(-90deg); //Opera
+        -ms-transform: rotate(-90deg); //IE
+        transform: rotate(-90deg); //браузеры без префексов
+    }
+    .top-cinema__baner__about{
+        background-color: #07131B;
+    }
+}
+.top-cinema__about{
+    background-color: #07131B;
+}
+// ************************************** END TOP CINEMA AREA ****************
