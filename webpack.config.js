@@ -43,6 +43,10 @@ module.exports = {
             test: /\.(jpe?g|png|gif|svg)$/i,
             type: 'asset/resource',
         },
+        {
+            test: /\.css$/i,
+            use: ["style-loader", "css-loader"],
+          },
         ]
     },
     plugins: [  // Array of plugins to apply to build chunk
