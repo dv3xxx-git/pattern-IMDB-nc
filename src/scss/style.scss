@@ -45,7 +45,18 @@ header {
 }
 .top-cinema__about{
     display: grid;
-    grid-template-rows: minmax(150px, 223px) auto minmax(70px, 80px);
+    grid-template-rows: minmax(150px, 237px) auto minmax(70px, 84px);
+}
+
+.top-cinema__about__anotaition{
+    display: grid;
+    grid-template-columns: 178px 90px auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+.top-cinema__about__anotaition__block{
+    display: grid;
+    grid-template-columns: minmax(80px, 110px) minmax(131px, 193px);
 }
 // ************************************** END GRID AREA **********************
 // ************************************** HEADER *****************************
@@ -203,11 +214,58 @@ header {
         -ms-transform: rotate(-90deg); //IE
         transform: rotate(-90deg); //браузеры без префексов
     }
-    .top-cinema__baner__about{
-        background-color: #07131B;
-    }
 }
 .top-cinema__about{
     background-color: #07131B;
+}
+
+.top-cinema__about .blue,.grey{
+    margin-top: 15px;
+    // margin-bottom: 15px;
+}
+
+.top-cinema__about__anotaition-main{
+    margin-top: 16px;
+    margin-left: 18px;
+}
+
+.top-cinema__about__gallery{
+    margin-bottom: 4px;
+}
+
+.top-cinema__about-content{
+    margin-left: 20px;
+    margin-right: 17px;
+    margin-top: 11px;
+    text-align: left;
+}
+
+.top-cinema__about__anotaition__block{
+    grid-column: 2/4;
+    padding-left: 17.59px;
+}
+
+.top-cinema__about__anotaition__block-title{
+    grid-column: 1/3;
+}
+
+.top-cinema__about__anotaition__block-section-blue{
+    grid-column: 1/2;
+}
+.top-cinema__about__anotaition__block-section-grey{
+    grid-column: 2/3;
+}
+
+.small-baner{
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+}
+
+.genres span{
+    text-align: center;
+    width: 49px;
+    
+    position: absolute;
 }
 // ************************************** END TOP CINEMA AREA ****************

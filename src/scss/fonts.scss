@@ -166,6 +166,52 @@
     font-weight: 600;
     font-style: normal;
 }
+.grey {
+    color: rgba(255, 255, 255, 0.797328);
+}
+
+.blue {
+    color: #70b0ff;
+}
+
+.grey,
+.blue {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+span {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.genres{
+    display: inline-block;
+    width: 52px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.185292);
+    margin-right: 10px;
+}
+h2 {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    color: #ffffff;
+    margin: 0;
+    margin-top: 11px;
+    margin-left: -1px;
+    height: 31px;
+    margin-bottom: 2px;
+}
 
 .typo-menu {
     font-family: "Proxima Nova Rg";
@@ -176,7 +222,8 @@
     font-family: "Roboto", sans-serif;
 }
 
-.playing-now__baner, .top-cinema__baner {
+.playing-now__baner,
+.top-cinema__baner {
     font-family: "Proxima Nova Rg";
     font-size: 19px;
     letter-spacing: 8.55px;
@@ -184,9 +231,16 @@
     color: #fff;
 }
 
-.playing-now__block__red{
+.playing-now__block__red {
     font-family: "Proxima Nova Rg";
     font-size: 20px;
     line-height: 24.36px;
-    color: #FFFFFF;
+    color: #ffffff;
+}
+
+.top-cinema__about-content {
+    font-family: "Proxima Nova Rg";
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.797328);
 }
