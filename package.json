@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --history-api-fallback --inline --progress",
+    "start": "webpack serve",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +17,9 @@
     "css-loader": "^5.1.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
+    "jquery": "^3.6.0",
     "node-sass": "^5.0.0",
+    "owl.carousel": "^2.3.4",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.24.4",

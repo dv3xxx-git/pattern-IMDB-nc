@@ -54,6 +54,10 @@ module.exports = {
             template: __dirname + "/src/public/index.html",
             inject: 'body'
         })
+        // new webpack.ProvidePlugin({
+        //     $: 'jquery',
+        //     jQuery: 'jquery'
+        // }),
     ],
     devServer: {  // configuration for webpack-dev-server
         contentBase: './src/public',  //source of static assets
