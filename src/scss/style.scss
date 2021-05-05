@@ -64,6 +64,20 @@ footer{
     grid-template-columns: 437px 228px 228px 137px 131px 139px;
     grid-template-rows: auto auto;
 }
+
+.about-film{
+    display: grid;
+    grid-template-columns: 413px 414px 407px;
+}
+
+.last-news{
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-right: 17px;
+    display: grid;
+    grid-template-rows: 21px repeat(3, minmax(105px,108px));
+    row-gap: 16px;
+}
 // ************************************** END GRID AREA **********************
 // ************************************** HEADER *****************************
 header {
@@ -137,7 +151,8 @@ header {
     white-space: nowrap;
     background-color: #2998e2;
     .baner-transform-text {
-        margin-top: 264px;
+        margin-top: 263px;
+
         -webkit-transform: rotate(-90deg); //Chrome, Safari
         -moz-transform: rotate(-90deg); //Firefox
         -o-transform: rotate(-90deg); //Opera
@@ -178,7 +193,7 @@ header {
 }
 
 .playing-now__block__red-ticket, .playing-now__block__red-info, .playing-now__block__red-watch{
-    margin: auto auto;
+
     text-align: center;
     width: 100%;
     height: 100%;
@@ -279,6 +294,13 @@ header {
     background-image: url("../img/png/bigbourne.png");
 }
 // ************************************** END TOP CINEMA AREA ****************
+// ************************************** ABOUT FILM AREA ********************
+.last-news{
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-right: 17px;
+}
+// ************************************** END ABOUT FILM AREA ****************
 // ************************************** FOOTER AREA ************************
 .download{
     margin-left: 16px;
